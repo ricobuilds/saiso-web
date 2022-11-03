@@ -5,6 +5,7 @@
 @layer base {
   * {
     font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
     @apply selection:bg-ruby-500 selection:text-sylver-100 text-sylver-100
   }
 }
