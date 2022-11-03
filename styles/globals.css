@@ -4,6 +4,7 @@
 
 @layer base {
   * {
+    font-family: 'Outfit', sans-serif;
     @apply selection:bg-ruby-500
   }
 }
