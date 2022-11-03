@@ -8,3 +8,15 @@
     @apply selection:bg-ruby-500 selection:text-white
   }
 }
+
+.container {
+  @apply flex flex-col min-h-screen
+}
+
+.wrapper {
+  @apply flex-grow
+}
+
+.main {
+  @apply max-w-4xl mx-auto w-full flex flex-col
+}
