@@ -13,11 +13,14 @@ const Home: NextPage = () => {
       </Head>
       <div className="bg-russian-600 h-[86vh] w-full wrapper">
       <Header/>
-        <main className='main pt-24'>
+        <div className='main pt-24'>
           <Hero />
-        </main>
+        </div>
       </div>
-          <div className="py-6 px-8 text-russian-600 bottom-0 w-full border">
+      <div className="main pt-16 text-russian-600">
+        asdasd
+      </div>
+          <div className="mt-8 py-6 px-8 text-russian-600 bottom-0 w-full border">
             &copy; Saiso 2022, All rights reserved.
           </div>
     </div>
