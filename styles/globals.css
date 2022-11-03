@@ -5,12 +5,12 @@
 @layer base {
   * {
     font-family: 'Outfit', sans-serif;
-    @apply selection:bg-ruby-500 selection:text-white
+    @apply selection:bg-ruby-500 selection:text-sylver-100 text-sylver-100
   }
 }
 
 .container {
-  @apply flex flex-col min-h-screen
+  @apply flex flex-col min-h-screen;
 }
 
 .wrapper {
@@ -19,4 +19,9 @@
 
 .main {
   @apply max-w-4xl mx-auto w-full flex flex-col
+}
+
+.gradientBg {
+  background-image: linear-gradient(to right, #fa0, #fd66cb 25%,#9f6eff 50%,#0af 75%,#0fa);
+  background-size: 140%;
 }
