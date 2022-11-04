@@ -6,8 +6,13 @@
   * {
     font-family: 'Outfit', sans-serif;
     scroll-behavior: smooth;
-    @apply selection:bg-ruby-500 selection:text-sylver-100 text-sylver-100
+    @apply selection:bg-ruby-500 selection:text-lightBg text-lightBg
   }
+}
+
+.stroke {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #616161;
 }
 
 .container {
