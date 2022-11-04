@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 import { NotionSvg } from '../icons/svg/notion'
@@ -30,13 +31,18 @@ const Home: NextPage = () => {
           Saiso <span className='text-ruby-400'>(pronounced &apos;Say-So&apos;)</span> is a low-code widget and API powered by Notion for
           feedback collection that helps you get from <span className='text-ruby-400'>ideation to validation</span> fast, saving you the time it'd take to set up your own feedback widget.
         </p>
-        {/* <div><NotionSvg /></div> */}  
       </div>
       <div className="main border mt-12 text-russian-600">
-        <h2 id="setup"className='text-d-h2 font-medium text-center'>Setting up <i className='text-ruby-500'>Saiso</i></h2>
+        <h2 id="setup" className='text-d-h2 font-medium text-center'>Setting up <i className='text-ruby-500'>Saiso</i></h2>
         <div className="mt-12">
           <div id="install" className="">
             {/* setup notion DB */}
+            <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>1. Create a Notion database.</h3>
+            <p className='max-w-lg'>
+              Click <Link href="#install" className='text-blue-400 underline underline-offset-2 inline-flex gap-1 items-center'>here
+              </Link> to copy the Saiso Database Template to your Notion account. You'll have to create one if you don't have one already.
+            </p>
+            <div><NotionSvg /></div>
           </div>
           <div className="">
             {/* setup notion integration */}
