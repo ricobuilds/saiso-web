@@ -27,15 +27,19 @@ const Home: NextPage = () => {
       <div id='problem' className="main gap-4 pt-12 text-russian-600">
         <h2 className='text-m-h2 sm:text-d-h2 font-medium text-center'>How modern solopreneurs & small teams create <span className='gradientBg text-center bg-clip-text text-transparent'>product-led solutions</span></h2>
         <p className='text-d-base text-center'>
-          Saiso <span className='text-ruby-400'>(pronounced &apos;Say-So&apos;)</span> is a low-code widget and API powered by Notion for feedback collection.
+          Saiso <span className='text-ruby-400'>(pronounced &apos;Say-So&apos;)</span> is a low-code widget and API powered by Notion for
+          feedback collection that helps you get from <span className='text-ruby-400'>ideation to validation</span> fast, saving you the time it'd take to set up your own feedback widget.
         </p>
-        <p>
-          You're likely a developer & builder in the budding emerging technologies with many ideas flowing to you,
-          and you want to create a new MVP and validate your idea with speed.
-        </p>
+        <div className="flex flex-col gap-3">
+          <p className='invisible hidden'>
+            You're likely a developer & builder, or a small team, working in the budding emerging technologies with many ideas flowing to you,
+            and you want to create a new MVP and validate your idea with speed. Or, you may have a live product, but want to make use of a low-code
+            tool that that uses a cost-effective backend like Notion.
+          </p>
+        </div>
+        {/* <div><NotionSvg /></div> */}
       </div>
       <div id='promo' className="main pt-12 border text-russian-600">
-        <NotionSvg />
       </div>
       <div id='setup' className="main border pb-[1500px] text-russian-600">
         <span className='text-d-h2 font-medium'>Setting up <i>Saiso</i></span>
