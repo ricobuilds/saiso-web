@@ -1,10 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 import { NOTION_DB_TEMPLATE } from '../constants'
-import { NotionSvg } from '../icons/svg/notion'
+import { NotionIcon } from '../icons/svg/notion'
+import { NodePackageManagerIcon } from '../icons/svg/npm'
+import stepOne from '../public/Saiso-StepOne.gif'
+import stepTwo from '../public/Saiso-StepTwo.gif'
+import stepThree from '../public/Saiso-StepThree.gif'
 
 const Home: NextPage = () => {
   return (
@@ -33,29 +38,73 @@ const Home: NextPage = () => {
           feedback collection that helps you get from <span className='text-ruby-400'>ideation to validation</span> fast, saving you the time it'd take to set up your own feedback widget.
         </p>
       </div>
-      <div className="main border mt-12 text-russian-600">
-        <h2 id="setup" className='text-d-h2 font-medium text-center'>Setting up <span className='text-ruby-500'>Saiso</span></h2>
+      <div className="main mt-12 text-russian-600">
+        <h2 id="setup" className='text-m-h2 sm:text-d-h2 font-medium text-center'>Why Notion?</h2>
+      </div>
+      <div className="main mt-12 text-russian-600">
+        <h2 id="setup" className='text-m-h2 sm:text-d-h2 font-medium text-center'>Setting up <span className='text-ruby-500'>Saiso</span></h2>
         <p className='text-center'>Implement Saiso's widget and API in 7 simple steps.</p>
-        <div className="mt-12">
-          <div id="install" className="">
+        <div className="mt-12 space-y-12">
+          <div id="install" className="flex flex-col sm:flex-row justify-center items-center gap-8">
             {/* setup notion DB */}
-            <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>1. Create a Notion database.</h3>
-            <p className='max-w-lg'>
-              Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='text-blue-400 underline underline-offset-2 inline-flex gap-1 items-center'>here
-              </Link> to copy the Saiso Database Template to your Notion account. You'll have to create one if you don't have one already.
-              Click <span className='text-ruby-400'>Duplicate</span> to clone the database.
-            </p>
-            <div><NotionSvg /></div>
-          </div>
-          <div className="">
-            {/* setup notion integration */}
-            <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>2. Create a Notion integration.</h3>
-            <p className='max-w-lg'>
-              Click the &apos;Settings & Members&apos; in the sidemenu.
+            <div className="text-center">
+              <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>1. Create a Notion database</h3>
+              <p className='max-w-lg'>
+                Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='text-blue-400 underline underline-offset-2 inline-flex gap-1 items-center'>here
+                </Link> to copy the Saiso Database Template to your Notion account - you'll have to create one if you don't have one already.
+                Click <span className='text-ruby-400'>Duplicate</span> to clone the database.
               </p>
+            </div>
+            <div className="border rounded border-gray-300 border-opacity-20 w-fit overflow-hidden hover:opacity-80 duration-200">
+              <Image src={stepOne} width={500} height={500} className="scale-110" alt="saiso step one" />
+            </div>
           </div>
+          
+          <div className="flex flex-col sm:flex-row-reverse justify-center items-center gap-8">
+            {/* setup notion integration */}
+            <div className="text-center">
+              <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>2. Create a Notion integration</h3>
+              <p className='max-w-lg'>
+                Click the&nbsp;
+                <span className='text-ruby-400'>Settings & Members</span> option in the sidemenu.
+                Navigate to <span className='text-ruby-400'>Connections</span> under Workspace, and then to&nbsp;
+                <span className='text-ruby-400'>Develop or manage integrations</span>.
+              </p>
+              <p className="max-w-lg">
+                In the new page opened, click
+                the <span className='text-ruby-400'>New Integrations</span> button, which will show
+                you a form to select the characteristics of your integration. We only need to set a name,
+                so get creative and name it to your liking! If not, you can simply name it 'saiso'. After submitting
+                the form,
+              </p>
+            </div>
+            <div className="border rounded border-gray-300 border-opacity-20 w-fit overflow-hidden hover:opacity-80 duration-200">
+              <Image src={stepTwo} width={500} height={500} className="scale-110" alt="saiso step two" />
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-8">
+            {/* setup notion DB */}
+            <div className="text-center">
+              <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>3. Link integration with database</h3>
+              <p className='max-w-lg'>
+                Now, we need to connect our integration with our database so that we can fetch and update
+                data. <span className='text-ruby-400'>Remember</span> to select the workspace where your Saiso database lives in.
+              </p>
+            </div>
+            <div className="border rounded border-gray-300 border-opacity-20 w-fit overflow-hidden hover:opacity-80 duration-200">
+              <Image src={stepThree} width={500} height={500} className="scale-105" alt="saiso step three" />
+            </div>
+          </div>
+
           <div className="">
             {/* install npm package */}
+            <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400 text-center'>4. Install Saiso&apos;s NPM package</h3>
+            <p>
+              Now let&apos;s install the Saiso NPM package. Copy the following snippet and run it in the local environment
+              of the project where you want to make use of it: <code className='bg-ruby-400 px-3 py-1 rounded'>npm i saiso</code>
+            </p>
+            <span><NodePackageManagerIcon/></span>
           </div>
           <div className="">
             {/* connect widget to API and notionDB */}
