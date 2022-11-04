@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className={'bg-darkBg'}>
       <Head>
-        <title>Saiso - Low-Code Feedback Widget Powered by Notion</title>
+        <title>Saiso - The low-code feedback widget powered by Notion</title>
         <meta name="description" content="Saiso - a low-code feedback widget for quick feedback gathering powered by Notion." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
