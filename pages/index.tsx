@@ -39,18 +39,15 @@ const Home: NextPage = () => {
         </p>
       </div>
       <div className="main mt-12 text-russian-600">
-        <h2 id="setup" className='text-m-h2 sm:text-d-h2 font-medium text-center'>Why Notion?</h2>
-      </div>
-      <div className="main mt-12 text-russian-600">
         <h2 id="setup" className='text-m-h2 sm:text-d-h2 font-medium text-center'>Setting up <span className='text-ruby-500'>Saiso</span></h2>
-        <p className='text-center'>Implement Saiso's widget and API in 7 simple steps.</p>
-        <div className="mt-12 space-y-12">
+        <p className='text-center'>Implement Saiso's widget in 5 simple steps.</p>
+        <div className="mt-12 space-y-24">
           <div id="install" className="flex flex-col sm:flex-row justify-center items-center gap-8">
             {/* setup notion DB */}
             <div className="text-center">
               <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>1. Create a Notion database</h3>
               <p className='max-w-lg'>
-                Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='text-blue-400 underline underline-offset-2 inline-flex gap-1 items-center'>here
+                Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='text-ruby-400 underline underline-offset-2 inline-flex gap-1 items-center'>here
                 </Link> to copy the Saiso Database Template to your Notion account - you'll have to create one if you don't have one already.
                 Click <span className='text-ruby-400'>Duplicate</span> to clone the database.
               </p>
@@ -59,7 +56,7 @@ const Home: NextPage = () => {
               <Image src={stepOne} width={500} height={500} className="scale-110" alt="saiso step one" />
             </div>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row-reverse justify-center items-center gap-8">
             {/* setup notion integration */}
             <div className="text-center">
@@ -97,17 +94,22 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className="">
+          <div className="relative">
             {/* install npm package */}
             <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400 text-center'>4. Install Saiso&apos;s NPM package</h3>
             <p>
               Now let&apos;s install the Saiso NPM package. Copy the following snippet and run it in the local environment
-              of the project where you want to make use of it: <code className='bg-ruby-400 px-3 py-1 rounded'>npm i saiso</code>
+              of the project where you want to make use of it: <code className='bg-ruby-400 px-3 py-1 rounded'>npm i saiso</code>&nbsp;
+              Do remember that this is a React component before continuing!
             </p>
-            <span><NodePackageManagerIcon/></span>
+            <span className='absolute -top-4 -right-10 rotate-6 scale-50'><NodePackageManagerIcon /></span>
           </div>
           <div className="">
             {/* connect widget to API and notionDB */}
+            <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400 text-center'>5. Saiso Time</h3>
+            <p>
+              It&apos;s Saiso time! Now that the Saiso widget is installed in your project, 
+            </p>
           </div>
         </div>
       </div>
