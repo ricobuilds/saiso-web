@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
+import { NOTION_DB_TEMPLATE } from '../constants'
 import { NotionSvg } from '../icons/svg/notion'
 
 const Home: NextPage = () => {
@@ -39,13 +40,18 @@ const Home: NextPage = () => {
             {/* setup notion DB */}
             <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>1. Create a Notion database.</h3>
             <p className='max-w-lg'>
-              Click <Link href="#install" className='text-blue-400 underline underline-offset-2 inline-flex gap-1 items-center'>here
+              Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='text-blue-400 underline underline-offset-2 inline-flex gap-1 items-center'>here
               </Link> to copy the Saiso Database Template to your Notion account. You'll have to create one if you don't have one already.
+              Click <span className='text-ruby-400'>Duplicate</span> to clone the database.
             </p>
             <div><NotionSvg /></div>
           </div>
           <div className="">
             {/* setup notion integration */}
+            <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>2. Create a Notion integration.</h3>
+            <p className='max-w-lg'>
+              Click the &apos;Settings & Members&apos; in the sidemenu.
+              </p>
           </div>
           <div className="">
             {/* install npm package */}

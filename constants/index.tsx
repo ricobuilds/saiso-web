@@ -1,0 +1,1 @@
+export const NOTION_DB_TEMPLATE = "https://0xreeko.notion.site/Saiso-Database-Template-58ef09776b32445ba4e8706634fed29a"
