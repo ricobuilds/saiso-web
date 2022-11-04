@@ -10,6 +10,8 @@ import { NodePackageManagerIcon } from '../icons/svg/npm'
 import stepOne from '../public/Saiso-StepOne.gif'
 import stepTwo from '../public/Saiso-StepTwo.gif'
 import stepThree from '../public/Saiso-StepThree.gif'
+import { RuiButton } from 'ruskelui'
+import { CodeBlock } from '../components/CodeBlock'
 
 const Home: NextPage = () => {
   return (
@@ -108,8 +110,9 @@ const Home: NextPage = () => {
             {/* connect widget to API and notionDB */}
             <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400 text-center'>5. Saiso Time</h3>
             <p>
-              It&apos;s Saiso time! Now that the Saiso widget is installed in your project, 
+              It&apos;s Saiso time! Now that the Saiso widget is installed in your project,
             </p>
+            <CodeBlock />
           </div>
         </div>
       </div>
