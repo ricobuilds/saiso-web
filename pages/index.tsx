@@ -34,7 +34,8 @@ const Home: NextPage = () => {
         </p>
       </div>
       <div className="main border mt-12 text-russian-600">
-        <h2 id="setup" className='text-d-h2 font-medium text-center'>Setting up <i className='text-ruby-500'>Saiso</i></h2>
+        <h2 id="setup" className='text-d-h2 font-medium text-center'>Setting up <span className='text-ruby-500'>Saiso</span></h2>
+        <p className='text-center'>Implement Saiso's widget and API in 7 simple steps.</p>
         <div className="mt-12">
           <div id="install" className="">
             {/* setup notion DB */}
