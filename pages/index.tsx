@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
+import { NotionSvg } from '../icons/svg/notion'
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,9 @@ const Home: NextPage = () => {
       </div>
       <div id='promo' className="main pt-12 border text-russian-600">
         <span className='text-d-h2'>asdasd</span>
+      </div>
+      <div id='promo' className="main pt-12 border text-russian-600">
+        <NotionSvg/>
       </div>
       <div id='setup' className="main border pb-[1500px] text-russian-600">
         <span className='text-d-h2 font-medium'>Setting up <i>Saiso</i></span>
