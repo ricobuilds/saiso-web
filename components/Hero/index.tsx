@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 export const Hero = () => {
     return (
         <div className="flex flex-col items-center text-center gap-6 w-fu   ll">
