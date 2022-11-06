@@ -29,37 +29,37 @@ const Home: NextPage = () => {
       </div>
       <div className="h-[86vh] w-full wrapper">
         <Header />
-        <div className='main pt-24'>
+        <div className='pt-24 main'>
           <Hero />
         </div>
       </div>
       <div id='problem' className="main gap-4 h-[60vh] py-12 text-russian-600">
-        <h2 className='text-m-h2 sm:text-d-h2 font-medium text-center'>How modern solopreneurs & small teams create <span className='gradientBg text-center bg-clip-text text-transparent'>product-led solutions</span></h2>
-        <p className='text-d-base text-center'>
+        <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>How modern solopreneurs & small teams create <span className='text-center text-transparent gradientBg bg-clip-text'>product-led solutions</span></h2>
+        <p className='text-center text-d-base'>
           Saiso <span className='text-ruby-400'>(pronounced &apos;Say-So&apos;)</span> is a low-code widget and API powered by Notion for
-          feedback collection that helps you get from <span className='text-ruby-400'>ideation to validation</span> fast, saving you the time it'd take to set up your own feedback widget.
+          feedback collection that helps you get from <span className='text-ruby-400'>ideation to validation</span> fast, saving you the time it&apos;d take to set up your own feedback widget.
         </p>
       </div>
-      <div className="main mt-12 text-russian-600">
-        <h2 id="setup" className='text-m-h2 sm:text-d-h2 font-medium text-center'>Setting up <span className='text-ruby-500'>Saiso</span></h2>
-        <p className='text-center'>Implement Saiso's widget in 5 simple steps.</p>
+      <div className="mt-12 main text-russian-600">
+        <h2 id="setup" className='font-medium text-center text-m-h2 sm:text-d-h2'>Setting up <span className='text-ruby-500'>Saiso</span></h2>
+        <p className='text-center'>Implement Saiso&apos;s widget in 5 simple steps.</p>
         <div className="mt-12 space-y-24">
-          <div id="install" className="flex flex-col sm:flex-row justify-center items-center gap-8">
+          <div id="install" className="flex flex-col items-center justify-center gap-8 sm:flex-row">
             {/* setup notion DB */}
             <div className="text-center">
               <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>1. Create a Notion database</h3>
               <p className='max-w-lg'>
-                Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='text-ruby-400 underline underline-offset-2 inline-flex gap-1 items-center'>here
-                </Link> to copy the Saiso Database Template to your Notion account - you'll have to create one if you don't have one already.
+                Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='inline-flex items-center gap-1 underline text-ruby-400 underline-offset-2'>here
+                </Link> to copy the Saiso Database Template to your Notion account - you&apos;ll have to create one if you don&apos;t have one already.
                 Click <span className='text-ruby-400'>Duplicate</span> to clone the database.
               </p>
             </div>
-            <div className="border rounded border-gray-300 border-opacity-20 w-fit overflow-hidden hover:opacity-80 duration-200">
+            <div className="overflow-hidden duration-200 border border-gray-300 rounded border-opacity-20 w-fit hover:opacity-80">
               <Image src={stepOne} width={500} height={500} className="scale-110" alt="saiso step one" />
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row-reverse justify-center items-center gap-8">
+          <div className="flex flex-col items-center justify-center gap-8 sm:flex-row-reverse">
             {/* setup notion integration */}
             <div className="text-center">
               <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>2. Create a Notion integration</h3>
@@ -73,16 +73,16 @@ const Home: NextPage = () => {
                 In the new page opened, click
                 the <span className='text-ruby-400'>New Integrations</span> button, which will show
                 you a form to select the characteristics of your integration. We only need to set a name,
-                so get creative and name it to your liking! If not, you can simply name it 'saiso'. After submitting
+                so get creative and name it to your liking! If not, you can simply name it &apos;saiso&apos;. After submitting
                 the form,
               </p>
             </div>
-            <div className="border rounded border-gray-300 border-opacity-20 w-fit overflow-hidden hover:opacity-80 duration-200">
+            <div className="overflow-hidden duration-200 border border-gray-300 rounded border-opacity-20 w-fit hover:opacity-80">
               <Image src={stepTwo} width={500} height={500} className="scale-110" alt="saiso step two" />
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-8">
+          <div className="flex flex-col items-center justify-center gap-8 sm:flex-row">
             {/* setup notion DB */}
             <div className="text-center">
               <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>3. Link integration with database</h3>
@@ -91,24 +91,24 @@ const Home: NextPage = () => {
                 data. <span className='text-ruby-400'>Remember</span> to select the workspace where your Saiso database lives in.
               </p>
             </div>
-            <div className="border rounded border-gray-300 border-opacity-20 w-fit overflow-hidden hover:opacity-80 duration-200">
+            <div className="overflow-hidden duration-200 border border-gray-300 rounded border-opacity-20 w-fit hover:opacity-80">
               <Image src={stepThree} width={500} height={500} className="scale-105" alt="saiso step three" />
             </div>
           </div>
 
           <div className="relative">
             {/* install npm package */}
-            <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400 text-center'>4. Install Saiso&apos;s NPM package</h3>
+            <h3 className='text-center text-m-h3 sm:text-d-h3 text-ruby-400'>4. Install Saiso&apos;s NPM package</h3>
             <p>
               Now let&apos;s install the Saiso NPM package. Copy the following snippet and run it in the local environment
-              of the project where you want to make use of it: <code className='bg-ruby-400 px-3 py-1 rounded'>npm i saiso</code>&nbsp;
+              of the project where you want to make use of it: <code className='px-3 py-1 rounded bg-ruby-400'>npm i saiso</code>&nbsp;
               Do remember that this is a React component before continuing!
             </p>
-            <span className='absolute -top-4 -right-10 rotate-6 scale-50'><NodePackageManagerIcon /></span>
+            <span className='absolute scale-50 -top-4 -right-10 rotate-6'><NodePackageManagerIcon /></span>
           </div>
           <div className="">
             {/* connect widget to API and notionDB */}
-            <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400 text-center'>5. Saiso Time</h3>
+            <h3 className='text-center text-m-h3 sm:text-d-h3 text-ruby-400'>5. Saiso Time</h3>
             <p>
               It&apos;s Saiso time! Now that the Saiso widget is installed in your project,
             </p>
@@ -116,9 +116,9 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8 py-6 px-8 text-m-copy sm:text-d-copy flex justify-between bottom-0 w-full">
+      <div className="bottom-0 flex justify-between w-full px-8 py-6 mt-8 text-m-copy sm:text-d-copy">
         <span>&copy; Saiso 2022, All rights reserved.</span>
-        <p>Made with 👾 by <span className='text-ruby-500 underline underline-offset-2' > <a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
+        <p>Made with 👾 by <span className='underline text-ruby-500 underline-offset-2' > <a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
       </div>
     </div>
   )
