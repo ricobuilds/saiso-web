@@ -6,7 +6,7 @@
   * {
     font-family: 'Outfit', sans-serif;
     scroll-behavior: smooth;
-    @apply selection:bg-ruby-500 selection:text-lightBg text-lightBg
+    @apply selection:bg-rosian-500 selection:text-onyx-100 text-onyx-100
   }
 }
 

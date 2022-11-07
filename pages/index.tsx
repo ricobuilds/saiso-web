@@ -12,10 +12,11 @@ import stepTwo from '../public/Saiso-StepTwo.gif'
 import stepThree from '../public/Saiso-StepThree.gif'
 import { RuiButton } from 'ruskelui'
 import { CodeBlock } from '../components/CodeBlock'
+import { ProCard, ProCardWrapper } from '../components/ProCard'
 
 const Home: NextPage = () => {
   return (
-    <div className={'bg-darkBg'}>
+    <div className={'bg-neropside-500'}>
       <Head>
         <title>Saiso - The low-code feedback widget powered by Notion</title>
         <meta name="description" content="Saiso - a low-code feedback widget for quick feedback gathering powered by Notion." />
@@ -33,25 +34,28 @@ const Home: NextPage = () => {
           <Hero />
         </div>
       </div>
-      <div id='problem' className="main gap-4 h-[60vh] py-12 text-russian-600">
+      <div id='problem' className="main gap-4 h-[60vh] py-12 text-neropside-600">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>How modern solopreneurs & small teams create <span className='text-center text-transparent gradientBg bg-clip-text'>product-led solutions</span></h2>
         <p className='text-center text-d-base'>
-          Saiso <span className='text-ruby-400'>(pronounced &apos;Say-So&apos;)</span> is a low-code widget and API powered by Notion for
-          feedback collection that helps you get from <span className='text-ruby-400'>ideation to validation</span> fast, saving you the time it&apos;d take to set up your own feedback widget.
+          Saiso <span className='text-rosian-400'>(pronounced &apos;Say-So&apos;)</span> is a low-code widget and API powered by Notion for
+          feedback collection that helps you get from <span className='text-rosian-400'>ideation to validation</span> fast, saving you the time it&apos;d take to set up your own feedback widget.
         </p>
       </div>
+      <ProCardWrapper>
+        <ProCard heading='Multi-purpose' content="Capture feedback from your users to build " />
+      </ProCardWrapper>
       <div className="mt-12 main text-russian-600">
-        <h2 id="setup" className='font-medium text-center text-m-h2 sm:text-d-h2'>Setting up <span className='text-ruby-500'>Saiso</span></h2>
+        <h2 id="setup" className='font-medium text-center text-m-h2 sm:text-d-h2'>Setting up <span className='text-rosian-500'>Saiso</span></h2>
         <p className='text-center'>Implement Saiso&apos;s widget in 5 simple steps.</p>
         <div className="mt-12 space-y-24">
           <div id="install" className="flex flex-col items-center justify-center gap-8 sm:flex-row">
             {/* setup notion DB */}
             <div className="text-center">
-              <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>1. Create a Notion database</h3>
+              <h3 className='text-m-h3 sm:text-d-h3 text-rosian-400'>1. Create a Notion database</h3>
               <p className='max-w-lg'>
-                Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='inline-flex items-center gap-1 underline text-ruby-400 underline-offset-2'>here
+                Click <Link href={NOTION_DB_TEMPLATE} target="_blank" className='inline-flex items-center gap-1 underline text-rosian-400 underline-offset-2'>here
                 </Link> to copy the Saiso Database Template to your Notion account - you&apos;ll have to create one if you don&apos;t have one already.
-                Click <span className='text-ruby-400'>Duplicate</span> to clone the database.
+                Click <span className='text-rosian-400'>Duplicate</span> to clone the database.
               </p>
             </div>
             <div className="overflow-hidden duration-200 border border-gray-300 rounded border-opacity-20 w-fit hover:opacity-80">
@@ -62,16 +66,16 @@ const Home: NextPage = () => {
           <div className="flex flex-col items-center justify-center gap-8 sm:flex-row-reverse">
             {/* setup notion integration */}
             <div className="text-center">
-              <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>2. Create a Notion integration</h3>
+              <h3 className='text-m-h3 sm:text-d-h3 text-rosian-400'>2. Create a Notion integration</h3>
               <p className='max-w-lg'>
                 Click the&nbsp;
-                <span className='text-ruby-400'>Settings & Members</span> option in the sidemenu.
-                Navigate to <span className='text-ruby-400'>Connections</span> under Workspace, and then to&nbsp;
-                <span className='text-ruby-400'>Develop or manage integrations</span>.
+                <span className='text-rosian-400'>Settings & Members</span> option in the sidemenu.
+                Navigate to <span className='text-rosian-400'>Connections</span> under Workspace, and then to&nbsp;
+                <span className='text-rosian-400'>Develop or manage integrations</span>.
               </p>
               <p className="max-w-lg">
                 In the new page opened, click
-                the <span className='text-ruby-400'>New Integrations</span> button, which will show
+                the <span className='text-rosian-400'>New Integrations</span> button, which will show
                 you a form to select the characteristics of your integration. We only need to set a name,
                 so get creative and name it to your liking! If not, you can simply name it &apos;saiso&apos;. After submitting
                 the form,
@@ -85,10 +89,10 @@ const Home: NextPage = () => {
           <div className="flex flex-col items-center justify-center gap-8 sm:flex-row">
             {/* setup notion DB */}
             <div className="text-center">
-              <h3 className='text-m-h3 sm:text-d-h3 text-ruby-400'>3. Link integration with database</h3>
+              <h3 className='text-m-h3 sm:text-d-h3 text-rosian-400'>3. Link integration with database</h3>
               <p className='max-w-lg'>
                 Now, we need to connect our integration with our database so that we can fetch and update
-                data. <span className='text-ruby-400'>Remember</span> to select the workspace where your Saiso database lives in.
+                data. <span className='text-rosian-400'>Remember</span> to select the workspace where your Saiso database lives in.
               </p>
             </div>
             <div className="overflow-hidden duration-200 border border-gray-300 rounded border-opacity-20 w-fit hover:opacity-80">
@@ -98,17 +102,17 @@ const Home: NextPage = () => {
 
           <div className="relative">
             {/* install npm package */}
-            <h3 className='text-center text-m-h3 sm:text-d-h3 text-ruby-400'>4. Install Saiso&apos;s NPM package</h3>
+            <h3 className='text-center text-m-h3 sm:text-d-h3 text-rosian-400'>4. Install Saiso&apos;s NPM package</h3>
             <p>
               Now let&apos;s install the Saiso NPM package. Copy the following snippet and run it in the local environment
-              of the project where you want to make use of it: <code className='px-3 py-1 rounded bg-ruby-400'>npm i saiso</code>&nbsp;
+              of the project where you want to make use of it: <code className='px-3 py-1 rounded bg-rosian-400'>npm i saiso</code>&nbsp;
               Do remember that this is a React component before continuing!
             </p>
             <span className='absolute scale-50 -top-4 -right-10 rotate-6'><NodePackageManagerIcon /></span>
           </div>
           <div className="">
             {/* connect widget to API and notionDB */}
-            <h3 className='text-center text-m-h3 sm:text-d-h3 text-ruby-400'>5. Saiso Time</h3>
+            <h3 className='text-center text-m-h3 sm:text-d-h3 text-rosian-400'>5. Saiso Time</h3>
             <p>
               It&apos;s Saiso time! Now that the Saiso widget is installed in your project,
             </p>
@@ -118,7 +122,7 @@ const Home: NextPage = () => {
       </div>
       <div className="bottom-0 flex justify-between w-full px-8 py-6 mt-8 text-m-copy sm:text-d-copy">
         <span>&copy; Saiso 2022, All rights reserved.</span>
-        <p>Made with 👾 by <span className='underline text-ruby-500 underline-offset-2' > <a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
+        <p>Made with 👾 by <span className='underline text-rosian-500 underline-offset-2' > <a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
       </div>
     </div>
   )
