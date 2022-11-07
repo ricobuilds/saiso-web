@@ -8,7 +8,7 @@ export const CodeBlock = () => {
                 <div className="flex items-baseline">
                     <p>
                         <span className="pr-4 font-mono text-gray-500 select-none">1</span>
-                        <span className="italic text-bayoux-800">// Applicable in React.js + Next.js</span>
+                        <span className="italic text-bayoux-800">{"// Applicable in React.js + Next.js"}</span>
                     </p>
                 </div>
                 <div className="flex items-baseline">
