@@ -9,14 +9,13 @@ import { NodePackageManagerIcon } from '../icons/svg/npm'
 import stepOne from '../public/Saiso-StepOne.gif'
 import stepTwo from '../public/Saiso-StepTwo.gif'
 import stepThree from '../public/Saiso-StepThree.gif'
+import arrow from '../public/arrow.png'
 import { CodeBlock } from '../components/CodeBlock'
-import { ProCard, ProCardWrapper } from '../components/ProCard'
-import { benefits } from '@data/benefits'
-import { naniteId } from 'naniteid'
+import { ProCardWrapper } from '../components/ProCard'
 
 const Home: NextPage = () => {
   return (
-    <div className={'bg-neropside-500'}>
+    <div className={'bg-neropside-500 relative'}>
       <Head>
         <title>Saiso - The low-code feedback widget powered by Notion</title>
         <meta name="description" content="Saiso - a low-code feedback widget for quick feedback gathering powered by Notion." />
@@ -28,12 +27,15 @@ const Home: NextPage = () => {
       <div className="fixed z-0 -right-[5%] top-[72%] sm:top-[52%] w-72 h-72 blur-[3px] opacity-40 rotate-[66deg]">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg"><defs><linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style={{ stopColor: 'rgb(238, 165, 236)' }}></stop><stop offset="100%" style={{ stopColor: 'rgb(101, 91, 255)' }}></stop></linearGradient></defs><path id="blob" fill="url(#gradient2)"><animate attributeName="d" dur="5000ms" repeatCount="indefinite" values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"></animate></path></svg>
       </div>
+      <div className="inset-0 ">
+        <Image src={arrow} style={{width:"100px"}} alt="demo arrow" className='fixed rotate-90 right-16 bottom-24 invert'/>
+      </div>
       <div className="h-[86vh] w-full wrapper">
         <Header />
         <div className='pt-24 main'>
           <Hero />
         </div>
-      </div>
+      </div>  
       <div id='problem' className="main gap-4 h-[60vh] py-12 text-neropside-600">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>How modern solopreneurs & small teams create <span className='text-center text-transparent gradientBg bg-clip-text'>product-led solutions</span></h2>
         <p className='text-center text-d-base'>
@@ -42,9 +44,22 @@ const Home: NextPage = () => {
         </p>
       </div>
       <ProCardWrapper>
-        {benefits.map((item) => (
-          <ProCard key={naniteId()} heading={item.heading} content={item.content} />
-        ))}
+        <div className={`w-full h-full px-8 py-6 border rounded-lg border-scarlet-500`}>
+          <span className="text-d-h5 text-scarlet-400">{"Plug & Play"}</span>
+          <p className="text-onyx-100">{"Start collecting valuable feedback from your users in seconds."}</p>
+        </div>
+        <div className={`w-full h-full px-8 py-6 border rounded-lg border-lazure-500`}>
+          <span className="text-d-h5 text-lazure-400">{"Multi Purpose"}</span>
+          <p className="text-onyx-100">{"No matter your niche, get your users' views on feature requests, ideas, issues and more."}</p>
+        </div>
+        <div className={`w-full h-full px-8 py-6 border rounded-lg border-jasper-500`}>
+          <span className="text-d-h5 text-jasper-400">{"Low Code"}</span>
+          <p className="text-onyx-100">{"Small yet mighty tool that let's you focus on iteration and is powered by Notion #lowcode."}</p>
+        </div>
+        <div className={`w-full h-full px-8 py-6 border rounded-lg border-jade-500`}>
+          <span className="text-d-h5 text-jade-400">{"User Satisfaction"}</span>
+          <p className="text-onyx-100">{"Listen to your community's opinions so that you can build great product-led solutions."}</p>
+        </div>
       </ProCardWrapper>
       <div id="setup" className="mt-12 main text-russian-600">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>Setting up <span className='text-rosian-500'>Saiso</span></h2>
