@@ -13,6 +13,7 @@ import stepThree from '../public/Saiso-StepThree.gif'
 import { RuiButton } from 'ruskelui'
 import { CodeBlock } from '../components/CodeBlock'
 import { ProCard, ProCardWrapper } from '../components/ProCard'
+import {benefits} from '@data/benefits'
 
 const Home: NextPage = () => {
   return (
@@ -42,7 +43,9 @@ const Home: NextPage = () => {
         </p>
       </div>
       <ProCardWrapper>
-        <ProCard heading='Multi-purpose' content="Capture feedback from your users to build " />
+        {benefits.map((item) => (
+          <ProCard heading={item.heading} content={item.content} />
+        ))}
       </ProCardWrapper>
       <div className="mt-12 main text-russian-600">
         <h2 id="setup" className='font-medium text-center text-m-h2 sm:text-d-h2'>Setting up <span className='text-rosian-500'>Saiso</span></h2>
