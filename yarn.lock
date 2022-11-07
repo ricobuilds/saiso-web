@@ -1334,6 +1334,11 @@
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   "version" "2.1.2"
 
+"naniteid@^0.1.2":
+  "integrity" "sha512-Vn3Z9lkHEG6Q17xC4H17Lh+kmrZBTSg/bOODwUzVqe+HvYnPk6oEKnTIzdarQfzCgKPcDDVRd65Eu3Ut1xD8Eg=="
+  "resolved" "https://registry.npmjs.org/naniteid/-/naniteid-0.1.2.tgz"
+  "version" "0.1.2"
+
 "nanoid@^3.3.4":
   "integrity" "sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw=="
   "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz"

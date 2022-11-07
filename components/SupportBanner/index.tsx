@@ -1,7 +1,7 @@
 export const SupportBanner = () => {
     return (
-        <div className="absolute px-3 py-1 rounded-lg right-8 bg-jade-500 text-neropside-500">
-            <span className="text-neropside-500 ">Saiso currently supports React & Next.js projects</span>
+        <div className="px-3 py-1 bg-jade-500 text-neropside-500">
+            <p className="text-center text-neropside-500 text-d-copy">Saiso currently supports React & Next.js projects. Reach out if you want to see Saiso support your ecosystem. Contribution is welcome as Saiso is Open Source!</p>
         </div>
     )
 }
