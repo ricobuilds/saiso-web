@@ -10,7 +10,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             res.status(200).json({...getResponse.properties});
         case "POST":
             try {
-                await notion.pages.create({
+                const pageResponse = await notion.pages.create({
                     "parent": {
                         "type": "database_id",
                         "database_id": databaseId
