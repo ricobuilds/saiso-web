@@ -43,11 +43,12 @@ const Home: NextPage = () => {
           <Hero />
         </div>
       </div>
-      <div id='problem' className="main gap-4 h-[60vh] py-12">
+      <div id='problem' className="main justify-center sm:justify-start gap-4 h-[60vh] my-24">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>How modern solopreneurs & small teams create <span className='text-center text-transparent gradientBg bg-clip-text'>product-led solutions</span></h2>
         <p className='text-center text-d-base'>
-          Saiso <span className='text-rosian-400'>(pronounced &apos;Say-So&apos;)</span> is a low-code widget and API powered by Notion for
-          feedback collection that helps you get from <span className='text-rosian-400'>ideation to validation</span> fast, saving you the time it&apos;d take to set up your own feedback widget.
+          Saiso <span className='text-rosian-400'>(pronounced &apos;Say-So&apos;)</span> is a feedback widget and API powered by Notion
+          to <span className='text-rosian-400'>validate</span> your products with speed. A non-intrusive communication channel that lets
+          your community members and site visitors contribute their feedback toward your product without affecting the user experience.
         </p>
       </div>
       <ProCardWrapper>
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
           <p className="text-onyx-100">{"Listen to your community's opinions so that you can build great product-led solutions."}</p>
         </div>
       </ProCardWrapper>
-      <div id="setup" className="mt-12 main">
+      <div id="setup" className="my-24 main">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>Setting up <span className='text-rosian-500'>Saiso</span></h2>
         <p className='text-center'>Implement Saiso&apos;s widget in 5 simple steps.</p>
         <div className="mt-12 space-y-24">
@@ -138,7 +139,12 @@ const Home: NextPage = () => {
             {/* connect widget to API and notionDB */}
             <h3 className='text-center text-m-h3 sm:text-d-h3 text-rosian-400'>5. Saiso Time 🥳🎉</h3>
             <p>
-              It&apos;s Saiso time! Now that the Saiso widget is installed in your project,
+              It&apos;s Saiso time! Now that the Saiso widget is installed in your project, initialise it by providing the
+              required values. You will need to fork this repo to clone the API. You expand the APIs functionality to your liking!
+            </p>
+            <p className='mt-4'>
+              If you already have API routes in your project, you can replicate the implementation in your own project. The identifier
+              for your Notion database and the integration key should be stored secretly {"(ex. in a .env file)"}.
             </p>
             <CodeBlock />
           </div>
@@ -146,7 +152,7 @@ const Home: NextPage = () => {
       </div>
       <div className="bottom-0 flex justify-between w-full px-8 py-6 mt-8 text-m-copy sm:text-d-copy">
         <span>&copy; Saiso 2022, All rights reserved.</span>
-        <p className='z-10'>Made with 👾 by <span className='underline text-rosian-500 underline-offset-2' > <a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
+        <p className='z-10'>Made with 👾 by <span className='underline text-rosian-500 underline-offset-2'><a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
       </div>
     </div>
   )
