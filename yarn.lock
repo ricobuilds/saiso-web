@@ -1814,10 +1814,10 @@
     "get-intrinsic" "^1.1.3"
     "is-regex" "^1.1.4"
 
-"saiso@^0.1.13":
-  "integrity" "sha512-HOp12dZVVJQiMTOnmlltlCw4U0Aarz2M25ujxS7BKrCF+QdxeTMdTvRKDkmVGv/ve+W4e9s/meNyYzNh2YHbCw=="
-  "resolved" "https://registry.npmjs.org/saiso/-/saiso-0.1.13.tgz"
-  "version" "0.1.13"
+"saiso@^0.1.14":
+  "integrity" "sha512-JtUfW19dIktO+XU0nHIcWVZBXfkySdZOJymVpd4K+wAEGdH27uvarjwd69TVMSBjfgw/t+KeWlT117d3GFSniw=="
+  "resolved" "https://registry.npmjs.org/saiso/-/saiso-0.1.14.tgz"
+  "version" "0.1.14"
   dependencies:
     "naniteid" "^0.1.2"
     "ruskelui" "^0.2.62"

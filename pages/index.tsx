@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           <Hero />
         </div>
       </div>
-      <div id='problem' className="main justify-center sm:justify-start gap-4 h-[60vh] my-24">
+      <div id='problem' className="main justify-center sm:justify-start gap-4 h-[60vh] my-12 mb-24">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>How modern solopreneurs & small teams create <span className='text-center text-transparent gradientBg bg-clip-text'>product-led solutions</span></h2>
         <p className='text-center text-d-base'>
           Saiso <span className='text-rosian-400'>(pronounced &apos;Say-So&apos;)</span> is a feedback widget and API powered by Notion
