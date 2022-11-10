@@ -43,7 +43,7 @@ const Home: NextPage = () => {
           <Hero />
         </div>
       </div>  
-      <div id='problem' className="main gap-4 h-[60vh] py-12 text-neropside-600">
+      <div id='problem' className="main gap-4 h-[60vh] py-12">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>How modern solopreneurs & small teams create <span className='text-center text-transparent gradientBg bg-clip-text'>product-led solutions</span></h2>
         <p className='text-center text-d-base'>
           Saiso <span className='text-rosian-400'>(pronounced &apos;Say-So&apos;)</span> is a low-code widget and API powered by Notion for
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
           <p className="text-onyx-100">{"Listen to your community's opinions so that you can build great product-led solutions."}</p>
         </div>
       </ProCardWrapper>
-      <div id="setup" className="mt-12 main text-russian-600">
+      <div id="setup" className="mt-12 main">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>Setting up <span className='text-rosian-500'>Saiso</span></h2>
         <p className='text-center'>Implement Saiso&apos;s widget in 5 simple steps.</p>
         <div className="mt-12 space-y-24">
