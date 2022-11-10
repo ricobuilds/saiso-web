@@ -12,7 +12,7 @@ import stepThree from '../public/Saiso-StepThree.gif'
 import arrow from '../public/arrow.png'
 import { CodeBlock } from '../components/CodeBlock'
 import { ProCardWrapper } from '../components/ProCard'
-import {SaisoWidget} from 'saiso'
+import { SaisoWidget } from 'saiso'
 
 const Home: NextPage = () => {
   const config = {
@@ -35,14 +35,14 @@ const Home: NextPage = () => {
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg"><defs><linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style={{ stopColor: 'rgb(238, 165, 236)' }}></stop><stop offset="100%" style={{ stopColor: 'rgb(101, 91, 255)' }}></stop></linearGradient></defs><path id="blob" fill="url(#gradient2)"><animate attributeName="d" dur="5000ms" repeatCount="indefinite" values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;"></animate></path></svg>
       </div>
       <div className="inset-0">
-        <Image src={arrow} style={{width:"100px"}} alt="demo arrow" className='fixed hidden rotate-90 z-[100] lg:flex right-16 bottom-24 invert'/>
+        <Image src={arrow} style={{ width: "100px" }} alt="demo arrow" className='fixed hidden rotate-90 z-[100] lg:flex right-16 bottom-32 invert' />
       </div>
       <div className="h-[86vh] w-full wrapper">
         <Header />
         <div className='pt-24 main'>
           <Hero />
         </div>
-      </div>  
+      </div>
       <div id='problem' className="main gap-4 h-[60vh] py-12">
         <h2 className='font-medium text-center text-m-h2 sm:text-d-h2'>How modern solopreneurs & small teams create <span className='text-center text-transparent gradientBg bg-clip-text'>product-led solutions</span></h2>
         <p className='text-center text-d-base'>
@@ -136,7 +136,7 @@ const Home: NextPage = () => {
           </div>
           <div className="">
             {/* connect widget to API and notionDB */}
-            <h3 className='text-center text-m-h3 sm:text-d-h3 text-rosian-400'>5. Saiso Time</h3>
+            <h3 className='text-center text-m-h3 sm:text-d-h3 text-rosian-400'>5. Saiso Time 🥳🎉</h3>
             <p>
               It&apos;s Saiso time! Now that the Saiso widget is installed in your project,
             </p>
@@ -146,7 +146,7 @@ const Home: NextPage = () => {
       </div>
       <div className="bottom-0 flex justify-between w-full px-8 py-6 mt-8 text-m-copy sm:text-d-copy">
         <span>&copy; Saiso 2022, All rights reserved.</span>
-        <p>Made with 👾 by <span className='underline text-rosian-500 underline-offset-2' > <a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
+        <p className='z-10'>Made with 👾 by <span className='underline text-rosian-500 underline-offset-2' > <a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
       </div>
     </div>
   )
