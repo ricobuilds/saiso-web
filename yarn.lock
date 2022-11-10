@@ -580,6 +580,11 @@
     "@babel/runtime" "^7.8.7"
     "csstype" "^3.0.2"
 
+"dotenv@^16.0.3":
+  "integrity" "sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ=="
+  "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
+  "version" "16.0.3"
+
 "electron-to-chromium@^1.4.251":
   "integrity" "sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA=="
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.284.tgz"
@@ -1809,10 +1814,10 @@
     "get-intrinsic" "^1.1.3"
     "is-regex" "^1.1.4"
 
-"saiso@^0.1.5":
-  "integrity" "sha512-oPs0oYJ1/7SN7tijhtvk4lg45+r0W7MC5UvYvzfkVCQoZcxVDobP49KA9cAHjzM8uoQPj303tj5EZi5N7nKIHQ=="
-  "resolved" "https://registry.npmjs.org/saiso/-/saiso-0.1.5.tgz"
-  "version" "0.1.5"
+"saiso@^0.1.8":
+  "integrity" "sha512-bdFaHvxCkv9Q+FXUSiJ9WIy9KZ/dBo9DmJ5r5DorCnDVmRSgK6+T6UnLsW/WtX01vcLF82y59lg1cNYWzWSNkg=="
+  "resolved" "https://registry.npmjs.org/saiso/-/saiso-0.1.8.tgz"
+  "version" "0.1.8"
   dependencies:
     "naniteid" "^0.1.2"
     "ruskelui" "^0.2.62"

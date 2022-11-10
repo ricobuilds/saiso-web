@@ -1,3 +1,4 @@
+require("dotenv").config();
 import { Client, LogLevel } from '@notionhq/client'
 import { NextApiRequest, NextApiResponse } from 'next'
 
@@ -12,10 +13,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             res.status(200).json({...getResponse.properties});
         case "POST":
             try {
-                await notion.pages.create({
+                const postResponse = await notion.pages.create({
                     "parent": {
                         "type": "database_id",
-                        "database_id": `${databaseId}`
+                        "database_id": `${process.env.NOTION_DATABASE_ID}`
                     },
                     properties: {
                         "Type": {
