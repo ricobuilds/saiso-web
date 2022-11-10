@@ -84,6 +84,54 @@ export const CodeBlock = () => {
                 </div>
                 <div className="flex items-baseline">
                     <p>
+                        <span className="pr-4 font-mono text-gray-500 select-none">7</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span className="text-citrine-300">notionDB</span>
+                        <span className="text-amethyst-300">=</span>
+                        <span className="text-lazure-400">{"{"}</span>
+                        <span className="text-onyx-100">{"`"}</span>
+                        <span className="text-scarlet-400">{"$"}</span>
+                        <span className="text-citrine-400">{"{"}</span>
+                        <span className="text-onyx-300">process</span>
+                        <span className="text-amethyst-300">{"."}</span>
+                        <span className="text-lazure-300">env</span>
+                        <span className="text-amethyst-300">{"."}</span>
+                        <span className="text-amethyst-300">NOTION_DATABASE</span>
+                        <span className="text-citrine-400">{"}"}</span>
+                        <span className="text-onyx-100">{"`"}</span>
+                        <span className="text-lazure-400">{"}"}</span>
+                    </p>
+                </div>
+                <div className="flex items-baseline">
+                    <p>
+                        <span className="pr-4 font-mono text-gray-500 select-none">7</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span className="text-citrine-300">notionKey</span>
+                        <span className="text-amethyst-300">=</span>
+                        <span className="text-lazure-400">{"{"}</span>
+                        <span className="text-onyx-100">{"`"}</span>
+                        <span className="text-scarlet-400">{"$"}</span>
+                        <span className="text-citrine-400">{"{"}</span>
+                        <span className="text-onyx-300">process</span>
+                        <span className="text-amethyst-300">{"."}</span>
+                        <span className="text-lazure-300">env</span>
+                        <span className="text-amethyst-300">{"."}</span>
+                        <span className="text-amethyst-300">NOTION_KEY</span>
+                        <span className="text-citrine-400">{"}"}</span>
+                        <span className="text-onyx-100">{"`"}</span>
+                        <span className="text-lazure-400">{"}"}</span>
+                    </p>
+                </div>
+                <div className="flex items-baseline">
+                    <p>
                         <span className="pr-4 font-mono text-gray-500 select-none">8</span>
                             <span className="text-lazure-300">{"/"}</span>
                             <span className="text-lazure-300">{">"}</span>
