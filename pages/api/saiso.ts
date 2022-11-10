@@ -1,19 +1,21 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
 import { Client, LogLevel } from '@notionhq/client'
+import { NextApiRequest, NextApiResponse } from 'next'
 
+const notion = new Client({ auth: process.env.NOTION_KEY, logLevel: LogLevel.DEBUG })
+
+const databaseId = process.env.NOTION_DATABASE_ID
+        
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-    const notion = new Client({auth: req.body.notionKey, logLevel: LogLevel.DEBUG})
-    const databaseId = req.body.notionDB
     switch (req.method) {
         case "GET":
             const getResponse = await notion.databases.retrieve({ database_id: `${databaseId}` })
             res.status(200).json({...getResponse.properties});
         case "POST":
             try {
-                const pageResponse = await notion.pages.create({
+                await notion.pages.create({
                     "parent": {
                         "type": "database_id",
-                        "database_id": databaseId
+                        "database_id": `${databaseId}`
                     },
                     properties: {
                         "Type": {
@@ -59,8 +61,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             } catch (error) {
                 res.status(400).json({result: "error"})
             }
-        default:
-            return {saiso: "Caramba! It seems we got a weird request here. Try again with plain GET or POST requests!"};
     }
 }
-
