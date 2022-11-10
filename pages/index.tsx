@@ -144,7 +144,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="bottom-0 flex justify-between w-full px-8 py-6 pb-12 mt-8 text-m-copy sm:text-d-copy">
+      <div className="bottom-0 flex justify-between w-full px-8 py-6 mt-8 text-m-copy sm:text-d-copy">
         <span>&copy; Saiso 2022, All rights reserved.</span>
         <p>Made with 👾 by <span className='underline text-rosian-500 underline-offset-2' > <a href='http://twitter.com/0xreeko'>0xreeko</a></span></p>
       </div>
